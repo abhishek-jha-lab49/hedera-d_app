@@ -1,6 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
-import { connectToWallet, getBalance, sendTransaction, getPhoneNumber } from './hashconnect';
+import { connectToWallet, getBalance, sendTransaction, getPhoneNumber } from './utils/hashconnect';
 
 function App() {
   return (
