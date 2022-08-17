@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import { connectToWallet, getBalance, sendTransaction, getPhoneNumber } from './hashconnect';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <button onClick={connectToWallet}>Connect to Wallet</button>
+
+      <button onClick={sendTransaction}>Send</button>
+
+      <button onClick={getBalance}>Balance</button>
+
+      <button onClick={getPhoneNumber}>Phone Number</button>
     </div>
   );
 }
